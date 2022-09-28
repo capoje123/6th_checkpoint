@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <aside class="col-lg-9">
+          <div class="card">
+            <div class="table-responsive">
+              <table class="table table-borderless table-shopping-cart">
+                <thead class="text-muted">
+                  <tr class="small text-uppercase">
+                    <th scope="col">Product</th>
+                    <th scope="col" width="120">Quantity</th>
+                    <th scope="col" width="120">Price</th>
+                    <th
+                      scope="col"
+                      class="text-right d-none d-md-block"
+                      width="200"
+                    ></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="itemside align-items-center">
+                      <div class="aside">
+                        <img
+                          src="https://m.media-amazon.com/images/I/51EWRgaqIKL.jpg"
+                          class="img-sm"
+                        />
+                      </div>
+                      <div class="info">
+                        <p class="title text-dark">Java</p>
+                        <p class="text-muted small">
+                          &euro; <span class="P_unit">50.00</span>
+                        </p>
+                      </div>
+                    </td>
+                    <td>
+                      <label class="btn-min">-</label>
+                      <label>1</label>
+                      <label class="btn_add">+</label>
+                    </td>
+                    <td>
+                      <label class="price price-wrap"
+                        >&euro; <span class="prix">50.00</span></label
+                      >
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <button class="btn_like">
+                        <i class="fa fa-heart"></i>
+                      </button>
+                      <button class="btn btn-light btn-round Remove">
+                        Remove
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="itemside align-items-center">
+                      <div class="aside">
+                        <img
+                          src="https://m.media-amazon.com/images/I/41+l48O6TbL.jpg"
+                          class="img-sm"
+                        />
+                      </div>
+                      <figcaption class="info">
+                        <a href="#" class="title text-dark" data-abc="true"
+                          >Python</a
+                        >
+                        <p class="text-muted small">
+                          &euro; <span class="P_unit">30.00</span>
+                        </p>
+                      </figcaption>
+                    </td>
+                    <td>
+                      <label class="btn-min">-</label>
+                      <label>1</label>
+                      <label class="btn_add">+</label>
+                    </td>
+                    <td>
+                      <label class="price price-wrap"
+                        >&euro; <span class="prix">30.00</span></label
+                      >
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <button class="btn_like">
+                        <i class="fa fa-heart"></i>
+                      </button>
+                      <button class="btn btn-light btn-round Remove">
+                        Remove
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="itemside align-items-center">
+                      <div class="aside">
+                        <img
+                          src="https://josipmisko.com/img/books/JavaScript-9780596805524.jpg"
+                          class="img-sm"
+                        />
+                      </div>
+                      <figcaption class="info">
+                        <a href="#" class="title text-dark" data-abc="true"
+                          >Java Script</a
+                        >
+                        <p class="small text-muted">
+                          &euro; <span class="P_unit">20.00</span>
+                        </p>
+                      </figcaption>
+                    </td>
+                    <td>
+                      <label class="btn-min">-</label>
+                      <label>1</label>
+                      <label class="btn_add">+</label>
+                    </td>
+                    <td>
+                      <label class="price price-wrap"
+                        >&euro; <span class="prix">20.00</span></label
+                      >
+                    </td>
+                    <td class="text-right d-none d-md-block">
+                      <button class="btn_like">
+                        <i class="fa fa-heart"></i>
+                      </button>
+                      <button class="btn btn-light btn-round Remove">
+                        Remove
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </aside>
+        <aside class="col-lg-3">
+          <div class="card mb-3">
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label>Have coupon?</label>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control coupon"
+                      name=""
+                      placeholder="Coupon code"
+                    />
+                    <span class="input-group-append">
+                      <button class="btn btn-primary btn-apply coupon">
+                        Apply
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <dl class="dlist-align">
+                <dt>Total price:</dt>
+                <dd class="text-right ml-3">
+                  $ <span id="Prix_total">100.00</span>
+                </dd>
+              </dl>
+              <dl class="dlist-align">
+                <dt>Discount:</dt>
+                <dd class="text-right text-danger ml-3">- $10.00</dd>
+              </dl>
+              <dl class="dlist-align">
+                <dt>Total:</dt>
+                <dd class="text-right text-dark b ml-3">
+                  <strong>$ <span id="som_total">90.00</span> </strong>
+                </dd>
+              </dl>
+              <hr />
+              <a
+                href="#"
+                class="btn btn-out btn-primary btn-square btn-main"
+                data-abc="true"
+              >
+                Make Purchase
+              </a>
+              <a
+                href="#"
+                class="btn btn-out btn-success btn-square btn-main mt-2"
+                data-abc="true"
+                >Continue Shopping</a
+              >
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
